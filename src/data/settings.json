@@ -1,0 +1,12 @@
+{
+  "brand": "X1 WAVEO Panel",
+  "language_default": "en",
+  "panel_api_public_url": "https://app.x1infra.net/WAVEO/api/",
+  "remote_activation_mode": "lab",
+  "premium_mode": "lab",
+  "security": {
+    "login_attempts": 5,
+    "lock_minutes": 15
+  },
+  "deployment_base_url": "https://app.x1infra.net/WAVEO/"
+}

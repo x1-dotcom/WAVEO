@@ -1,0 +1,2 @@
+<?php
+require __DIR__.'/../../lib/core.php';$in=x1_input_json();$r=x1_pair_create_v2($in);if(empty($r['ok']))x1_callable_json(['error'=>'rate_limited','rateLimit'=>$r['rateLimit']??[]],429);x1_api_log('createSyncPairingCode','success',200,['sessionId'=>$r['sessionId']]);x1_callable_json(['code'=>$r['code'],'sessionId'=>$r['sessionId'],'ttlSeconds'=>$r['ttlSeconds'],'expiresAt'=>$r['expiresAt'],'sourceDeviceId'=>$r['sourceDeviceId'],'sourceDeviceInfo'=>$r['sourceDeviceInfo'],'requestedOptions'=>$r['requestedOptions'],'rateLimit'=>$r['rateLimit']]);

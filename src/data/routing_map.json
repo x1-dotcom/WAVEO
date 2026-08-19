@@ -1,0 +1,22 @@
+{
+  "rtdb": {
+    "url": "https://iptvcompanion-default-rtdb.europe-west1.firebasedatabase.app/",
+    "confirmed_nodes": [
+      "m3uLinks"
+    ]
+  },
+  "callables": [
+    "createSyncPairingCode",
+    "confirmSyncPairing",
+    "lookupAccessCodeOwner",
+    "pushPlaylists",
+    "pullPlaylists",
+    "verifyAccessCodeDevice",
+    "redeemAccessCode",
+    "getPremiumCheckoutConfig"
+  ],
+  "manual_http_functions": [
+    "devicePollPendingActivationsByMac",
+    "deviceAckActivationJob"
+  ]
+}

@@ -1,0 +1,2 @@
+<?php
+declare(strict_types=1);const X1_ROOT=__DIR__.'/..';require_once __DIR__.'/db.php';require_once __DIR__.'/security.php';require_once __DIR__.'/totp.php';require_once __DIR__.'/core_parts/01.php';require_once __DIR__.'/core_parts/02.php';require_once __DIR__.'/core_parts/03.php';require_once __DIR__.'/core_parts/04.php';require_once __DIR__.'/core_parts/05.php';require_once __DIR__.'/core_parts/06.php';require_once __DIR__.'/core_parts/07.php';

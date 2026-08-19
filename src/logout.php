@@ -1,0 +1,1 @@
+<?php require __DIR__.'/lib/core.php';x1_admin_start();session_destroy();header('Location:index.php');

@@ -1,0 +1,2 @@
+<?php
+require __DIR__.'/../../lib/core.php';$in=x1_input_json();$code=(string)($in['accessCode']??$in['code']??'');$r=x1_premium_code_find($code);if(!$r)x1_callable_json(['uid'=>'','ownerUid'=>'','found'=>false]);$uid=(string)($r['ownerUid']??'');x1_api_log('lookupAccessCodeOwner','success',200,['found'=>$uid!=='']);x1_callable_json(['uid'=>$uid,'ownerUid'=>$uid,'found'=>$uid!=='']);

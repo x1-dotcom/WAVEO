@@ -1,0 +1,2 @@
+<?php
+require __DIR__.'/../../lib/core.php';$in=x1_input_json();$mac=(string)($in['macAddress']??'');if($mac==='')x1_json(['error'=>'macAddress_required'],400);$jobs=array_map('x1_activation_public',x1_find_activation_jobs($mac));x1_api_log('devicePollPendingActivationsByMac','success',200,['mac'=>$mac,'count'=>count($jobs)]);x1_json(['jobs'=>$jobs]);

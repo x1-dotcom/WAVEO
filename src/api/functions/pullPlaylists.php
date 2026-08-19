@@ -1,0 +1,2 @@
+<?php
+require __DIR__.'/../../lib/core.php';$in=x1_input_json();$session=(string)($in['sessionId']??'');$since=(int)($in['sinceRevision']??$in['lastRevision']??0);$mode=(string)($in['mode']??'FULL_IMPORT');$r=x1_cloud_pull_playlists_v2($session,$since,$mode);x1_api_log('pullPlaylists',$r['ok']?'success':'invalid_session',200,['sessionId'=>$session,'sinceRevision'=>$since]);x1_callable_json($r);

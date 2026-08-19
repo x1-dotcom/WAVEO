@@ -1,0 +1,25 @@
+{
+  "apk_version": "2.1.1",
+  "package": "com.smartwave.wave_iptv",
+  "firebase": {
+    "project_id": "iptvcompanion",
+    "google_app_id": "1:1939085973:android:c0a8ff47a5b0b258a5599c",
+    "storage_bucket": "iptvcompanion.appspot.com",
+    "database_url": "https://iptvcompanion-default-rtdb.europe-west1.firebasedatabase.app",
+    "functions_region": "europe-west1",
+    "api_key_present_in_apk": true,
+    "api_key_display": "[REDACTED]"
+  },
+  "direct_panel": {
+    "panel_api": "https://demo.cockpit.lol/api/wave/",
+    "method": "GET",
+    "user_agent": "WAVEO-Panel"
+  },
+  "routing_classes": {
+    "portal_api": "direct HTTP PANEL_API",
+    "remote_activation": "manual HTTPS Cloud Functions",
+    "premium": "Firebase Functions Callable",
+    "cloud_sync": "Firebase Functions Callable",
+    "qr_m3u_onboarding": "Firebase Realtime Database"
+  }
+}

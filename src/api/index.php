@@ -1,0 +1,2 @@
+<?php
+require __DIR__.'/../lib/core.php';if($_SERVER['REQUEST_METHOD']!=='GET'){x1_api_log('wave_portals_alias','method_not_allowed',405);x1_json(['error'=>'method_not_allowed'],405);}x1_api_log('wave_portals_alias','success',200,['user_agent'=>substr((string)($_SERVER['HTTP_USER_AGENT']??''),0,120)]);x1_json(x1_portals_payload());
