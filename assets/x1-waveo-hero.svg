@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-label="X1 WAVEO — Public Project in Development">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#03080d"/><stop offset="1" stop-color="#08161f"/></linearGradient>
+    <linearGradient id="wave" x1="0" x2="1"><stop stop-color="#17e9ff"/><stop offset=".5" stop-color="#7c5cff"/><stop offset="1" stop-color="#17e9ff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1600" height="520" rx="26" fill="url(#bg)"/>
+  <path d="M0 420 C120 420 145 225 265 225 S410 420 530 420 S675 150 795 150 S940 420 1060 420 S1205 255 1325 255 S1470 420 1600 420" fill="none" stroke="url(#wave)" stroke-width="5" opacity=".82" filter="url(#glow)"/>
+  <path d="M0 444 C115 444 155 315 260 315 S410 444 530 444 S680 250 795 250 S940 444 1060 444 S1210 345 1325 345 S1470 444 1600 444" fill="none" stroke="#17e9ff" stroke-width="1.5" opacity=".3"/>
+  <g transform="translate(92 92)">
+    <text x="0" y="42" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="7" fill="#7bdff0">X1 // PUBLIC LAB</text>
+    <text x="0" y="150" font-family="Arial Black,Arial,sans-serif" font-size="106" font-weight="900" letter-spacing="-4" fill="#ffffff">WAVEO</text>
+    <text x="0" y="205" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" letter-spacing="5" fill="#17e9ff">PROJECT IN DEVELOPMENT</text>
+    <text x="0" y="258" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#a7c6d1">Public repository · no release declared · scope will be documented when proven</text>
+  </g>
+  <g transform="translate(1110 92)">
+    <rect x="0" y="0" width="380" height="150" rx="18" fill="#07131a" stroke="#17394a"/>
+    <text x="28" y="42" font-family="Arial,Helvetica,sans-serif" font-size="16" letter-spacing="4" fill="#6c8996">STATUS</text>
+    <text x="28" y="84" font-family="Arial Black,Arial,sans-serif" font-size="30" fill="#ffffff">DEVELOPMENT</text>
+    <text x="28" y="118" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#17e9ff">NO PUBLIC RELEASE YET</text>
+  </g>
+  <text x="92" y="492" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="5" fill="#62818e">X1 · BUILD ONLY WHAT CAN BE PROVEN</text>
+</svg>
