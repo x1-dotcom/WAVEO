@@ -63,9 +63,13 @@ There is no `eval` or base64 runtime loader in the public PHP application.
 
 X1 WAVEO is actively maintained against the WAVEO client contracts and routing behavior implemented by this project.
 
-Compatibility can vary with application versions, Android devices, server configuration and upstream behavior. If a specific flow behaves differently in a real deployment, open a report with the affected feature, app version and device details so it can be reproduced, corrected and included in a subsequent update.
+If something behaves differently in your environment, **open a GitHub issue**. We will review the report, reproduce the affected flow where possible, identify the cause and address reproducible compatibility problems in the project.
 
-The panel includes Protocol Observatory and Android Validation tooling specifically to make compatibility issues measurable and easier to fix instead of hiding them.
+Please include the application/APK version, Android version, device model, affected feature, expected behavior, actual behavior and any relevant logs with passwords, tokens and private credentials removed.
+
+Compatibility can vary with application versions, Android devices, server configuration and upstream behavior. The panel includes Protocol Observatory and Android Validation tooling specifically to make those differences measurable and easier to investigate and correct.
+
+**Found a problem? Report it here and we will investigate it. If it is reproducible, we will work on a fix.**
 
 ## Community
 
