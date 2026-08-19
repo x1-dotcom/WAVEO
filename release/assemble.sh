@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -eu
+cat X1_WAVEO_PANEL_v1.4_PUBLIC_OBFUSCATED_RC.zip.b64.part* | base64 -d > X1_WAVEO_PANEL_v1.4_PUBLIC_OBFUSCATED_RC.zip
+sha256sum X1_WAVEO_PANEL_v1.4_PUBLIC_OBFUSCATED_RC.zip
