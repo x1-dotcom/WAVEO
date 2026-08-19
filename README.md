@@ -6,6 +6,16 @@
 
 It combines device operations, APK release management, Cloud Sync, pairing, premium workflows, Remote Activation routing, security controls, observability and Android validation in one panel.
 
+## Public source
+
+The conservatively minified public source is available in [`src/`](src/).
+
+The GitHub layout splits the minified core into several `lib/core_parts/` files only to keep the public repository manageable. The split public layout was syntax-validated successfully: **72/72 PHP files PASS**.
+
+Private APK signing keys, internal reverse-engineering notes and development-only patch tooling are **not** published.
+
+There is no `eval` or base64 runtime loader in the public PHP application.
+
 ## Main capabilities
 
 - Device Control with status, groups, tags, premium state and application metadata
@@ -31,16 +41,6 @@ It combines device operations, APK release management, Cloud Sync, pairing, prem
 - Protocol Observatory
 - Android Validation registry with PASS / FAIL / N/A / PENDING states
 
-## Public release package
-
-The public package is conservatively minified/obfuscated. It does **not** contain private signing keys, internal reverse-engineering notes or development-only tooling.
-
-The release archive is stored in `release/` as Base64 text parts because this repository integration writes text files only. Use the included assembly script to reconstruct the ZIP and verify its SHA-256.
-
-Expected SHA-256:
-
-`50e6af9e18ff81c4775fa77032805ef47a4c94a28fe0ff72d012a8f4bf058eb3`
-
 ## Production requirements
 
 - PHP 8.1+
@@ -51,11 +51,21 @@ Expected SHA-256:
 - writable `storage/` and `uploads/`
 - configured `X1_APP_KEY`
 
+## Installation
+
+1. Copy `src/` to the target web directory.
+2. Copy `.env.example` to `.env` and configure a strong `X1_APP_KEY`.
+3. Ensure `storage/`, `uploads/` and the PHP user permissions are correct.
+4. Open `install.php` and create the first Owner account.
+5. Run `php bin/worker.php 25` from cron/systemd for queued operations.
+
 ## Compatibility status
 
 Server-side contracts and APK routing patches have been structurally validated.
 
 Real-device Android validation is intentionally kept as a separate gate. Structural routing validation is not presented as proof that every Android flow has passed E2E testing.
+
+At the current RC stage, Firebase Realtime Database routing remains a separate Android/SDK validation target.
 
 ## Community
 
