@@ -59,13 +59,13 @@ There is no `eval` or base64 runtime loader in the public PHP application.
 4. Open `install.php` and create the first Owner account.
 5. Run `php bin/worker.php 25` from cron/systemd for queued operations.
 
-## Compatibility status
+## Compatibility & support
 
-Server-side contracts and APK routing patches have been structurally validated.
+X1 WAVEO is actively maintained against the WAVEO client contracts and routing behavior implemented by this project.
 
-Real-device Android validation is intentionally kept as a separate gate. Structural routing validation is not presented as proof that every Android flow has passed E2E testing.
+Compatibility can vary with application versions, Android devices, server configuration and upstream behavior. If a specific flow behaves differently in a real deployment, open a report with the affected feature, app version and device details so it can be reproduced, corrected and included in a subsequent update.
 
-At the current RC stage, Firebase Realtime Database routing remains a separate Android/SDK validation target.
+The panel includes Protocol Observatory and Android Validation tooling specifically to make compatibility issues measurable and easier to fix instead of hiding them.
 
 ## Community
 
