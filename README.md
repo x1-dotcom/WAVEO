@@ -28,6 +28,10 @@
 
 WAVEO brings device operations, release management, pairing, cloud-state workflows, security controls, observability and Android validation into one self-hosted operational surface.
 
+<p align="center">
+  <img src="./assets/x1-waveo-capabilities.svg" alt="X1 WAVEO capability surface" width="100%" />
+</p>
+
 ---
 
 <p align="center">
