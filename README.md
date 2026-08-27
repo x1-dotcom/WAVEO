@@ -8,9 +8,9 @@
 </p>
 
 <p align="center">
-  <a href="https://x1panel.space"><strong>WEBSITE</strong></a>
+  <a href="https://x1panelhq.com"><strong>WEBSITE</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://forum.x1panel.space"><strong>FORUM</strong></a>
+  <a href="https://forum.x1panelhq.com"><strong>FORUM</strong></a>
   &nbsp;·&nbsp;
   <a href="https://discord.gg/vSSw6jHmw"><strong>DISCORD</strong></a>
   &nbsp;·&nbsp;
@@ -152,8 +152,8 @@ Keep deployment secrets, private signing material, customer information and priv
 
 ## Community
 
-- Website — https://x1panel.space
-- Forum — https://forum.x1panel.space
+- Website — https://x1panelhq.com
+- Forum — https://forum.x1panelhq.com
 - Discord — https://discord.gg/vSSw6jHmw
 - Telegram — https://t.me/+XkuQS_QuD6g4Nzc0
 
